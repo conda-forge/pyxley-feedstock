@@ -14,14 +14,15 @@ Summary: Python tools for building Flask-based web applications
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pyxley-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pyxley-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pyxley-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pyxley-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pyxley-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pyxley-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/pyxley-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/pyxley-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyxley/badges/version.svg)](https://anaconda.org/conda-forge/pyxley)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyxley/badges/downloads.svg)](https://anaconda.org/conda-forge/pyxley)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pyxley-green.svg)](https://anaconda.org/conda-forge/pyxley) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pyxley.svg)](https://anaconda.org/conda-forge/pyxley) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pyxley.svg)](https://anaconda.org/conda-forge/pyxley) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pyxley.svg)](https://anaconda.org/conda-forge/pyxley) |
 
 Installing pyxley
 =================
@@ -66,6 +67,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
