@@ -1,9 +1,8 @@
-{%set name = "pyxley" %}
-{%set version = "0.1.0" %}
-{%set compress_type = "tar.gz" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "8d30f55b0a6bc4742f24a85c2afbdcd59e8480af5c84426d37254bd072e1c32d" %}
-{%set build_num = "0" %}
+{% set name = "pyxley" %}
+{% set version = "0.1.0" %}
+{% set compress_type = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash_val = "8d30f55b0a6bc4742f24a85c2afbdcd59e8480af5c84426d37254bd072e1c32d" %}
 
 package:
   name: {{ name|lower }}
@@ -11,19 +10,18 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.{{ compress_type }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
   {{ hash_type }}: {{ hash_val }}
 
 build:
   noarch: python
-  number: {{ build_num }}
+  number: 1
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   host:
-    - pip
     - python
-    - setuptools
+    - pip
 
   run:
     - python
